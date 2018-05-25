@@ -1,10 +1,11 @@
 
 	function gamer(ct = 0, guess = ""){
 
-		var arr = ['azure', 'black', 'blue', 'brown', 'cyan', 'gold', 'gray', 'green', 'magenta', 'navy', 'orange', 'pink', 'red', 'silver'];
+		var arr = ['azure', 'black', 'blue', 'brown', 'cyan', 'gold', 'gray', 'green', 'magenta', 'navy', 'orange', 'pink', 'red', 'silver'];//our list of options
 
-		var colors = "";
+		var colors = ""; //colors 
 
+		//this for loop helps us display the colors nicely in the prompt box
 		for(var i = 0; i < arr.length; i++){
 			if(i == arr.length){
 				colors += arr[i]+'.';
@@ -15,14 +16,20 @@
 
 		count = ct;
 
-		var ans = prompt('I am thinking of one of these colors \n\n' + colors);
 
+		var ans = prompt('I am thinking of one of these colors \n\n' + colors);//we store the users answer into the 'ans' variable
+
+		//if the user answer we implement count
 		if(ans){
 			count = count + 1;
 		}
-		console.log(ans);
+		
+
+		var computerGuess = (guess == "") ? arr[Math.floor(Math.random()*arr.length)] : guess;// the computer guesses
+
+		//we first check if the users answer is in the given option
+		//if not, we ask if user would like to comtinue, if yes we continue if no, we'll put the correct answer and end the game
 		if(arr.includes(ans)){
-			var computerGuess = (guess == "") ? arr[Math.floor(Math.random()*arr.length)] : guess;
 			// console.log('ok');
 			indexA = arr.indexOf(ans);
 			indexB = arr.indexOf(computerGuess); 
