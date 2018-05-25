@@ -40,7 +40,7 @@
 					gamer(0);
 				}
 			} else if(indexA < indexB){
-				if(count > 7){
+				if(count > 5){
 					alert("Game Over, the answer was "+ computerGuess);
 					again = confirm("will you like to play again?");
 					if(again){
@@ -51,7 +51,7 @@
 					return gamer(count, computerGuess);
 				}
 			} else if(indexA > indexB){
-				if(count > 7){
+				if(count > 5){
 					alert("Game Over, the answer was "+ computerGuess);
 					again = confirm("will you like to play again?");
 					if(again){
