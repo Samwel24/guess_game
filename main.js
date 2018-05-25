@@ -34,7 +34,7 @@
 				}
 			} else if(indexA < indexB){
 				if(count > 7){
-					alert("Game Over");
+					alert("Game Over, the answer was "+ computerGuess);
 					again = confirm("will you like to play again?");
 					if(again){
 						gamer(0);
@@ -45,7 +45,7 @@
 				}
 			} else if(indexA > indexB){
 				if(count > 7){
-					alert("Game Over");
+					alert("Game Over, the answer was "+ computerGuess);
 					again = confirm("will you like to play again?");
 					if(again){
 						gamer(0);
@@ -59,6 +59,8 @@
 			//console.log('no');
 			if(!confirm("Your answer is not an option, would you like to quit the game?")){
 				gamer(count);
+			} else {
+				alert("Nice try, the answer was "+ computerGuess);
 			}
 		}
 
