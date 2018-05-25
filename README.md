@@ -1,6 +1,6 @@
 # Welcome to Samuel Ezedi's GuessGame :+1:
 
-##Instructions
+## Instructions
 
 > This is a very simple and basic game
 > but trust me jsut because you could do it easily doesn't mean someone else can
